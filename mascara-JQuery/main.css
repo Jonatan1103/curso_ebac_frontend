@@ -86,3 +86,7 @@ button:hover {
 footer {
   padding-top: 10px;
 }
+
+label.error {
+  color: red;
+}
