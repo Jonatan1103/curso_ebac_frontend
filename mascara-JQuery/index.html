@@ -11,32 +11,45 @@
   <title>Mascara JQuery</title>
 </head>
 <body>
-  <header>
-    <h1>Cadastre-se na nossa Página</h1>
-  </header>
+  <div class="alinhamento">
+    <div class="container">
+      <header>
+        <h1>Cadastre-se na nossa Página</h1>
+      </header>
+    
+      <form>
+        <div>
+          <label for="nomeCompleto">Nome Completo</label>
+          <input type="text" name="nomeCompleto" id="nomeCompleto" >  
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email">  
+        </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" name="telefone" id="telefone" >  
+        </div>
+        <div>
+          <label for="cpf">CPF</label>
+          <input type="number" name="cpf" id="cpf" >  
+        </div>
+        <div>
+          <label for="endereco">Endereço Completo</label>
+          <input type="text" name="endereco" id="endereco" >  
+        </div>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="number" name="cep" id="cep" >  
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
 
-  <form>
-    <label for="">Nome Completo
-    <input type="text">  
-    </label>
-    <label for="">E-mail
-    <input type="text">  
-    </label>
-    <label for="">Telefone
-    <input type="text">  
-    </label>
-    <label for="">CPF
-    <input type="text">  
-    </label>
-    <label for="">Endereço Completo
-    <input type="text">  
-    </label>
-    <label for="">CEP
-    <input type="text">  
-    </label>
-    <button type="submit"></button>
-  </form>
-
+    <footer>
+      &copy; JT formulários 2023
+    </footer>
+  </div>
   <script src="./main.js"></script>
 </body>
 </html>
