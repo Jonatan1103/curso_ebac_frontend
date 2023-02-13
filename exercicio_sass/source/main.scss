@@ -1,21 +1,8 @@
-// variaveis
-$tela-grande: 1023px;
-$tela-pequena: 767px;
-$cor-primaria: #f5f6fa;
-$cor-secundaria: #182C61;
-$cor-botoes: #44bd32;
-$cor-texto-branco: #fff;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif;
-  list-style: none;
-}
+@use './config/reset';
+@use './config/variaveis';
 
 body {
-  background-color: $cor-primaria;
+  background-color: variaveis.$cor-primaria;
 }
 
 .container {
@@ -23,13 +10,13 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  @media screen and (max-width: $tela-grande) {
+  @media screen and (max-width: variaveis.$tela-grande) {
     width: 80%;
   }
 }
 
 header {
-  background-color: $cor-secundaria;
+  background-color: variaveis.$cor-secundaria;
   position: sticky;
   top: 0;
   left: 0;
@@ -51,7 +38,7 @@ header {
   }
 
   a {
-    color: $cor-texto-branco;
+    color: variaveis.$cor-texto-branco;
     text-decoration: none;
   }
 }
@@ -75,8 +62,8 @@ section {
 
   .product-button {
     display: block;
-    background-color: $cor-botoes;
-    color: $cor-texto-branco;
+    background-color: variaveis.$cor-botoes;
+    color: variaveis.$cor-texto-branco;
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
@@ -84,16 +71,16 @@ section {
     text-decoration: none;
   
     &:hover {
-      background-color: lighten($cor-botoes, 5%);
+      background-color: lighten( variaveis.$cor-botoes, 5%);
     }
   }
 
-  @media screen and (max-width: $tela-grande) {
+  @media screen and (max-width: variaveis.$tela-grande) {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 
-  @media screen and (max-width: $tela-pequena) {
+  @media screen and (max-width: variaveis.$tela-pequena) {
     display: block;
 
     .product-item  {
