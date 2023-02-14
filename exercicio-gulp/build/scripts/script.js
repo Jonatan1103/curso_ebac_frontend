@@ -1,0 +1,1 @@
+function ಠ_ಠ645(){for(let o=0;o<=10;o++){var ಠ_ಠ644=o;console.log(ಠ_ಠ644)}}

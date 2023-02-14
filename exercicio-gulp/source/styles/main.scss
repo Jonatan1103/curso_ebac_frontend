@@ -1,0 +1,11 @@
+@use 'variaveis';
+
+body {
+  background-color: variaveis.$corPrimaria;
+
+  h1 {
+    color: variaveis.$corTexto;
+    font-family: variaveis.$fonte;
+    text-align: center;
+  }
+}
