@@ -8,6 +8,6 @@ const alunos = [
 ]
 
 const notaMaiorQueSeis = aluno => aluno.nota > 6
-const alunosAprovados = alunos.filter(notaMaiorQueSeis)
+const alunosAprovados = () => alunos.filter(notaMaiorQueSeis)
 
-console.log(alunosAprovados)
+console.log(alunosAprovados())
